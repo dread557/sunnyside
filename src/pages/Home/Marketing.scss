@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main-text {
+  padding: 20px;
+  text-align: center;
+  line-height: 24px;
+}

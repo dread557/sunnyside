@@ -1,0 +1,31 @@
+.hero-section {
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 40px;
+  letter-spacing: 6px;
+  background-image: url("../../../public/assets/image-header.jpg");
+
+  div {
+    font-family: "Fraunces", serif;
+    font-size: 1.8rem;
+  }
+
+  .arrow-down {
+    position: absolute;
+    top: 290px;
+    transform: translateX(-50%);
+    animation: bounce 1s 1s ease-in-out 5;
+    -webkit-animation: bounce 1s 1s ease-in-out 5;
+  }
+}
+
+@keyframes bounce {
+  100% {
+    top: 250px;
+  }
+}
