@@ -1,10 +1,73 @@
 .main {
   display: grid;
   grid-template-columns: 1fr;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-text {
+    padding: 20px;
+    text-align: center;
+    line-height: 24px;
+
+    h2 {
+      font-size: 2rem;
+      color: hsl(212, 27%, 19%);
+      line-height: 1.2;
+    }
+
+    p {
+      color: hsl(232, 10%, 55%);
+    }
+
+    a {
+      border-bottom: 4px solid hsl(51, 100%, 49%);
+      font-weight: 800;
+      color: hsl(212, 27%, 19%);
+      text-transform: uppercase;
+    }
+  }
+
+  .group.two .main-text a {
+    border-bottom: 4px solid hsl(7, 99%, 70%);
+  }
+  .main-img img {
+    width: 100%;
+  }
+
+  .main-img.x {
+    order: -1;
+  }
+
+  .main-text:first-of-type {
+    order: 1;
+  }
+
+  // .main-text.bg img {
+  //   width: 100%;
+  // }
+
+  .main-text.bg.a {
+    background-image: url("../../../public/assets/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 423px;
+  }
+
+  .main-text.bg.b {
+    background-image: url("../../../public/assets/image-photography.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 423px;
+  }
 }
 
-.main-text {
-  padding: 20px;
-  text-align: center;
-  line-height: 24px;
+@media screen and (min-width: 700px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
