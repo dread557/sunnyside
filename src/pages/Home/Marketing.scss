@@ -8,9 +8,18 @@
   }
 
   .main-text {
-    padding: 20px;
+    .text-wrapper {
+      padding: 45px;
+    }
     text-align: center;
     line-height: 24px;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     h2 {
       font-size: 2rem;
@@ -20,6 +29,7 @@
 
     p {
       color: hsl(232, 10%, 55%);
+      margin-bottom: 25px;
     }
 
     a {
@@ -35,6 +45,8 @@
   }
   .main-img img {
     width: 100%;
+    height: 100%;
+    flex: 1;
   }
 
   .main-img.x {
@@ -45,16 +57,13 @@
     order: 1;
   }
 
-  // .main-text.bg img {
-  //   width: 100%;
-  // }
-
   .main-text.bg.a {
     background-image: url("../../../public/assets/image-graphic-design.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     padding-top: 423px;
+    margin-bottom: 0;
   }
 
   .main-text.bg.b {
@@ -63,11 +72,43 @@
     background-position: top;
     background-repeat: no-repeat;
     padding-top: 423px;
+    margin-bottom: 0;
+  }
+
+  .group.three {
+    .main-text.bg.a p {
+      color: hsl(167, 40%, 24%);
+    }
+
+    .main-text.bg.b p {
+      color: hsl(198, 62%, 26%);
+    }
   }
 }
 
 @media screen and (min-width: 700px) {
   .main {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+
+    .group {
+      flex-direction: row-reverse;
+      .main-text {
+        flex: 1;
+        text-align: left;
+      }
+      .main-img {
+        flex: 1;
+      }
+    }
+
+    .two {
+      flex-direction: row;
+    }
+    .three .main-text {
+      text-align: center;
+      .text-wrapper {
+        padding: 0 180px;
+      }
+    }
   }
 }

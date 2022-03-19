@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import Services from './pages/Services/Services';
 import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
