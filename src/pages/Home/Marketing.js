@@ -43,7 +43,9 @@ function Marketing() {
                 </div>
             </div>
             <div className='group three'>
-                <div data-aos="flip-left" className='main-text bg a'>
+                <div data-aos="fade-up"
+                    data-aos-duration="3000"
+                    className='main-text bg a'>
                     <div className='text-wrapper'>
                         <h2>Graphic design</h2>
                         <p> Great design makes you memorable. We deliver
@@ -52,7 +54,10 @@ function Marketing() {
                     </div>
 
                 </div>
-                <div data-aos="flip-right" className='main-text bg b'>
+                <div data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    className='main-text bg b'>
                     <div className='text-wrapper'>
                         <h2>Photograhy</h2>
                         <p>Increase your credibility by getting the most

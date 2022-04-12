@@ -7,6 +7,7 @@ import Services from './pages/Services/Services';
 import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/about' exact element={<About />} />
+        <Route path='/services' exact element={<Services />} />
+        <Route path='/projects' exact element={<Projects />} />
       </Routes>
       <Footer />
     </Router>

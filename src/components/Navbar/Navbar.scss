@@ -30,12 +30,12 @@
     position: absolute;
     top: 80px;
     z-index: 9;
+    transition: 0.5s 0.21s ease-out;
     opacity: 1;
-
     background: #fff;
     padding-top: 20px;
 
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       width: 25px;
